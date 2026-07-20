@@ -37,12 +37,12 @@
 body {
   background-color: var(--pink-50);
   color: var(--pink-600);
-  font-family: 'MyCustomBodyFont', sans-serif;
+  font-family: 'DK Jambo', sans-serif;
 }
 
 /* Custom font applied to Header 1 through Header 5 */
 h1, h2, h3, h4, h5 {
-  font-family: 'MyCustomHeaderFont', sans-serif;
+  font-family: 'Baby Doll', sans-serif;
   color: var(--pink-500);
 }
 
