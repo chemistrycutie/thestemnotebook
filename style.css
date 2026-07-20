@@ -1,13 +1,61 @@
-/* 1. Define the font and point to its location */
+/* ==========================================
+   1. CUSTOM FONT UPLOADS
+   ========================================== */
+
+/* Font for all headings (H1 to H5) */
 @font-face {
   font-family: 'DK Jambo';
-  src: url('fonts/DK Jambo.woff2') format('woff2');
+  src: url('DK Jambo.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-/* 2. Apply the font to your website text */
+/* Font for body text and paragraph elements */
+@font-face {
+  font-family: 'Baby Doll';
+  src: url('Baby Doll.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================
+   2. PINK PALETTE CONFIGURATION
+   ========================================== */
+:root {
+  --pink-50: #fdf2f8;
+  --pink-100: #fce7f3;
+  --pink-200: #fbcfe8;
+  --pink-300: #f9a8d4;
+  --pink-400: #f472b6;
+  --pink-500: #db2777;
+  --pink-600: #be185d;
+}
+
+/* ==========================================
+   3. GLOBAL STYLES & TYPOGRAPHY
+   ========================================== */
+body {
+  background-color: var(--pink-50);
+  color: var(--pink-600);
+  font-family: 'MyCustomBodyFont', sans-serif;
+}
+
+/* Custom font applied to Header 1 through Header 5 */
+h1, h2, h3, h4, h5 {
+  font-family: 'MyCustomHeaderFont', sans-serif;
+  color: var(--pink-500);
+}
+
+a {
+  color: var(--pink-500);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--pink-600);
+  text-decoration: underline;
+}
+
 
 
 
