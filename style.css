@@ -1,60 +1,23 @@
-/* ==========================================
-   1. CUSTOM FONT UPLOADS
-   ========================================== */
-
-/* Font for all headings (H1 to H5) */
-@font-face {
-  font-family: 'DK Jambo';
-  src: url('DK Jambo.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+/* Link your uploaded custom font */
+@font-face {DK Jambo
+    font-family: 'DK Jambo';
+    src: url('./assets/fonts/DK Jambo.woff2') format('woff2'),
+         url('./assets/fonts/DK Jambo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Font for body text and paragraph elements */
-@font-face {
-  font-family: 'Baby Doll';
-  src: url('Baby Doll.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+/* Apply the font and color options to your classes */
+.text-option-red {
+    font-family: 'MyCustomFont', sans-serif;
+    color: #FF4136; /* Red color option */
 }
 
-/* ==========================================
-   2. PINK PALETTE CONFIGURATION
-   ========================================== */
-:root {
-  --pink-50: #fdf2f8;
-  --pink-100: #fce7f3;
-  --pink-200: #fbcfe8;
-  --pink-300: #f9a8d4;
-  --pink-400: #f472b6;
-  --pink-500: #db2777;
-  --pink-600: #be185d;
+.text-option-blue {
+    font-family: 'MyCustomFont', sans-serif;
+    color: #0074D9; /* Blue color option */
 }
 
-/* ==========================================
-   3. GLOBAL STYLES & TYPOGRAPHY
-   ========================================== */
-body {
-  background-color: var(--pink-50);
-  color: var(--pink-600);
-  font-family: 'DK Jambo', sans-serif;
-}
-
-/* Custom font applied to Header 1 through Header 5 */
-h1, h2, h3, h4, h5 {
-  font-family: 'Baby Doll', sans-serif;
-  color: var(--pink-500);
-}
-
-a {
-  color: var(--pink-500);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--pink-600);
-  text-decoration: underline;
-}
 
 
 
